@@ -1,12 +1,13 @@
+import { useGeolocation } from '../hooks/useGeolocation';
+
 export const HemisphereDisplay = () => {
 
-  const currentLocation = null;
+  const currentLocation = useGeolocation();
 
   if (!currentLocation) {
     return <p>{'Sorry, location is currently unavailable'}</p>;
   }
 
-  // currentLocation should have a .latitude property
   if (currentLocation.latitude === 0) {
     return <p>You are at the equator!</p>;
   }

@@ -1,7 +1,6 @@
 {
   "name": "react-custom-hooks-example",
   "version": "1.0.0",
-  "type": "module",
   "description": "React Custom Hooks Example",
   "scripts": {
     "start": "react-scripts start",
@@ -12,11 +11,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-scripts": "^5.0.1"
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "overrides": {
+    "lodash": "4.17.21"
   },
   "eslintConfig": {
     "extends": [
